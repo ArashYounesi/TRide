@@ -1,0 +1,43 @@
+.map-layout {
+  flex: 1;
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+.car-marker {
+  width: 50px;
+  height: 50px;
+  transform: rotate(-45deg);
+  position: relative;
+  overflow-x: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+}
+
+.mapboxgl-ctrl-group {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.mapboxgl-ctrl-geolocate {
+  background-color: var(--tg-theme-button-color, $button-color-default) !important;
+  border-radius: .5rem !important;
+
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+  width: 2rem !important;
+  height: 2rem !important;
+
+}

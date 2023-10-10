@@ -1,0 +1,35 @@
+
+:root {
+  --gray: #f5f6fa;
+  --white: #fff;
+}
+
+$bg-color-default: #fff;
+$text-color-default: #000;
+$button-color-default: #f1c40f;
+$button-text-color-default: #000;
+
+$bg-color: var(--tg-theme-bg-color, $bg-color-default);
+$text-color: var(--tg-theme-text-color, $text-color-default);
+$button-color: var(--tg-theme-button-color, $button-color-default);
+$button-text-color: var(--tg-theme-button-text-color, $button-text-color-default);
+
+.bg-color {
+  background-color: $bg-color;
+}
+
+.text-color {
+  color: $text-color;
+}
+
+.button-color {
+  color: $button-color;
+}
+
+.button-text-color {
+  color: $button-text-color;
+}
+
+.bg-button-color {
+  background-color: $button-color !important;
+}

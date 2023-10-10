@@ -1,0 +1,157 @@
+.bottom-drawer {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  animation: slide-up 400ms ease;
+}
+
+.bottom-dialog {
+  animation: slide-up 400ms ease;
+}
+
+.where-to-go {
+  .destinations {
+    width: 100vw;
+  }
+
+  .destination {
+    min-width: 7rem;
+    font-size: 0.6rem;
+    background-color: var(--gray);
+
+    &:last-child {
+      margin-right: 0.75rem;
+    }
+
+    .icon {
+      background-color: var(--white);
+      top: -1rem;
+    }
+  }
+}
+
+.select-addresss {
+  .line {
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    width: 100%;
+  }
+}
+
+.pin-wrapper,
+.pin-marker {
+  position: fixed;
+  left: calc(50% - 33px);
+  top: calc(50% - 33px);
+  z-index: 10;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .extra-background {
+    background-color: var(--tg-theme-button-color, $button-color-default);
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    &:before {
+      content: '';
+      animation: pulse 1.5s infinite;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      z-index: -1;
+      background-color: var(--tg-theme-button-color, $button-color-default);
+      border-radius: 50%;
+    }
+  }
+
+  .inner {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 8px white;
+    z-index: 11;
+    box-sizing: content-box;
+  }
+
+  .pin.pickup {
+    padding-top: 1px;
+    padding-right: 1px;
+  }
+}
+
+.pin-marker {
+  left: 0;
+  top: 0;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-up {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.trip-type {
+  transition: 0.3s all ease;
+
+  .price {
+    padding-top: 4px;
+
+    & > :nth-child(2) {
+      padding-right: 2px;
+      padding-left: 1px;
+    }
+
+    & > :nth-child(1),
+    & > :nth-child(3) {
+      padding-top: 5px;
+    }
+  }
+
+  &.active {
+    transform: scale(1.1);
+
+    & > .icon,
+    & > .title {
+      color: var(--tg-theme-button-color, $button-color-default);
+    }
+
+    & > .price {
+      background-color: transparent;
+    }
+  }
+}
