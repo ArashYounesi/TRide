@@ -1,6 +1,6 @@
 # T Ride
 
-a Mini App that provides a demo flow for request fictional rides (motorcycle, car, helicopter). User is presented with a map where they can select their
+A Mini App that provides a demo flow for request fictional rides (motorcycle, car, helicopter). User is presented with a map where they can select their
 location (source location) and destination location, then choose vehicle type and finally place a sample request
 
 <u>Note that this project hasn't server side part and generate mock data in client side</u>
@@ -14,7 +14,7 @@ location (source location) and destination location, then choose vehicle type an
 
 - Wrriten in [Vue Js](https://vuejs.org/)
 - Beautiful and eye-catching appearance
-- Componetn based
+- Component based
 - Provides map for select source and destination location using power of [Mapbox](https://www.mapbox.com/)
 - Provides a demo flow for request fictional rides includes Bike, Car and Helicopter
 
@@ -37,7 +37,7 @@ location (source location) and destination location, then choose vehicle type an
 
 - Telegram bot
 - Server to deploy project on it
-- Domian connected to server
+- Domain connected to server
 
 In order to use this project as a [Telegram Mini App](https://core.telegram.org/bots/webapps) some requirements needs:
 
@@ -45,7 +45,7 @@ In order to use this project as a [Telegram Mini App](https://core.telegram.org/
 - Upload files in `dist` folder to server
 - Create a new telegram bot using [BotFather](https://t.me/botfather) (`/newbot`)
 - Create a new web app based on created bot using [BotFather](https://t.me/botfather) (`/newapp`)
-- Lunch using link BotFather gives you
+- Launch using link BotFather gives you
 
 You can also edit your Mini App url, name, ... using [BotFather](https://t.me/botfather) (`/myapps`)
 For detailed information about Telegram Bot and Mini App please visit [Telegram Mini App](https://core.telegram.org/bots/webapps)
